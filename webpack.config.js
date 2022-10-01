@@ -9,6 +9,7 @@ module.exports = {
     },
     module: {
         rules: [
+            //Babel para hacer codigo compatible en todos los navegadores
             {
                 test: /\.m?js$/,
                 exclude: /node_modules/,
@@ -18,6 +19,14 @@ module.exports = {
                     presets: ["@babel/preset-env", "@babel/preset-react"]
                     }
                 }
+            },
+            //Compilar css
+            {
+                test: /\.css$/i,
+                use: [
+                    'style-loader', 
+                    'css-loader'
+                ],
             }
         ]
     },

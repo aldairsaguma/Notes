@@ -1,4 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot  } from 'react-dom/client';
+import { NotesApp } from './components/NotesApp';
 
-ReactDOM.render(<h1>Hola Mundo!</h1>, document.getElementById('root'));
+// Styles
+import './styles/base/normalize.css'
+import './styles/base/base.css'
+
+const root = createRoot(document.getElementById("root"));
+
+root.render( 
+    <React.StrictMode>
+        <NotesApp />
+    </React.StrictMode>
+);

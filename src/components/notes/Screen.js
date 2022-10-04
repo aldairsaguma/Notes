@@ -4,7 +4,7 @@ import { Header } from './header/Header';
 
 export const Screen = () => {
     return (
-        <div className='wrapper'>
+        <div className='page-wrapper'>
             <Header />
             <Body />
         </div>

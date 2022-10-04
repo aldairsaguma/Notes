@@ -3,8 +3,9 @@ import { createRoot  } from 'react-dom/client';
 import { NotesApp } from './components/NotesApp';
 
 // Styles
-import './styles/base/normalize.css'
-import './styles/base/base.css'
+import './styles/base/__normalize.scss';
+import './styles/base/__variables.scss';
+import './styles/base/__base.scss';
 
 const root = createRoot(document.getElementById("root"));
 
